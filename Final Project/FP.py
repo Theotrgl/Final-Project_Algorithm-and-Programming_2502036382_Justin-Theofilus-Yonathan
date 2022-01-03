@@ -25,7 +25,7 @@ Yellow=(255,255,51)
 tile_size=50
 game_over=0
 main_menu=True
-end=False
+
 
 
 
@@ -165,7 +165,7 @@ class Player():
                 if self.direction== -1:
                     self.image=self.images_left[self.index]
                 
-            #Adding Gravity and setting jump height            
+            #Adding Gravity           
             self.vel_y+=1
             if self.vel_y>20:
                 self.vel_y=20
